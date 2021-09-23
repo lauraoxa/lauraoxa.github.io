@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@500&display=swap');
+
+h2 {
+  font-family: 'Big Shoulders Stencil Display', cursive;
+  font-size: 2rem;
+  color: #FFF;
+  margin: 1rem;
+  text-align: center;
+}
+
+.big-link a {
+  display: block;
+  margin: 1rem auto;
+  text-align: center;
+  font-size: 2rem;
+  text-decoration: none;
+}
