@@ -11,6 +11,7 @@
 a {
   color: hsl(290, 60%, 80%);
   cursor: pointer;
+  text-decoration: none;
 }
 
 a:visited {
@@ -61,11 +62,19 @@ header {
   margin: 0.5rem;
 }
 
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin: 0;
+  padding: 0;
+}
+
 .menu {
   display: inline-block;
   position: relative;
-  top: 0;
-  left: 0;
   z-index: 20;
 }
 
@@ -112,12 +121,9 @@ header {
   font-weight: 500;
   font-size: 1.25rem;
   width: 15rem;
+  height: max-content;
   background-color: hsla(0, 0%, 4%, 0.95);
-  background-clip: padding-box;
   list-style: none;
-  margin: 0;
-  padding: 0;
-  transform: translateY(4.5rem);
 }
 
 .menu-links li a {
@@ -126,6 +132,7 @@ header {
   color: hsl(290, 50%, 90%);
   padding-left: 1rem;
   line-height: 2;
+  pointer-events: all;
 }
 
 .menu-links li:hover {
@@ -139,6 +146,7 @@ header {
   display: block;
   pointer-events: all;
   position: absolute;
+  transform: translateY(4.5rem);
 }
 
 h1 {
