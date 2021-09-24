@@ -62,30 +62,12 @@ header {
   margin: 0.5rem;
 }
 
-nav ul {
-  margin: 0;
-  padding: 0;
-}
-
-nav li {
-  margin: 0;
-  padding: 0;
-}
-
-.menu {
-  display: inline-block;
-  position: relative;
-  z-index: 20;
-}
-
 .menu-logo {
   display: block;
-  z-index: 21;
   cursor: pointer;
-}
-
-.menu:hover .menu-logo {
-  filter: invert(85%);
+  border: none;
+  width: max-content;
+  height: max-content;
 }
 
 .menu-logo img {
@@ -109,44 +91,39 @@ nav li {
   color: rgb(0, 0, 0);
 }
 
+.menu {
+  display: inline-block;
+  position: relative;
+}
+
 .menu-links {
   display: none;
-  z-index: 20;
   position: absolute;
-  pointer-events: none;
+  z-index: 21;
+  min-width: 20rem;
 }
 
-.menu-links li {
-  display: block;
-  font-weight: 500;
-  font-size: 1.25rem;
-  width: 15rem;
-  height: max-content;
-  background-color: hsla(0, 0%, 4%, 0.95);
-  list-style: none;
-}
-
-.menu-links li a {
+.menu-links a {
   display: block;
   text-decoration: none;
-  color: hsl(290, 50%, 90%);
+  font-weight: 700;
+  font-size: 1.25rem;
   padding-left: 1rem;
   line-height: 2;
-  pointer-events: all;
+  background-color: hsla(0, 0%, 4%, 0.95);
 }
 
-.menu-links li:hover {
-  font-weight: 700;
-  font-style: italic;
-  pointer-events: all;
-  background-color: hsla(290, 50%, 5%);;
+.menu-links a:hover {
+  background-color: hsl(290, 50%, 5%);
+}
+  
+.menu:hover .menu-logo {
+  filter: invert(85%);
 }
 
-.menu:hover > .menu-links {
+.menu:hover .menu-links {
   display: block;
-  pointer-events: all;
-  position: absolute;
-  transform: translateY(4.5rem);
+  transform: translateY(4rem);
 }
 
 h1 {
