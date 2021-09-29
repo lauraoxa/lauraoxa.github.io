@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Birthstone+Bounce:wght@400;500&display=swap'); /*header H1*/
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,300;0,500;0,600;1,300;1,500;1,600;1,700&display=swap');
+
+/* ----- HEADER ----- */
+
+header {
+  display: flex;
+  vertical-align: middle;
+  margin: 0.5rem;
+  z-index: 1000;
+  height: 5rem;
+}
+
+header > button {
+  border: none;
+}
+
+header .menu-logo {
+  display: block;
+  cursor: pointer;
+  border: none;
+  width: max-content;
+  height: max-content;
+}
+
+header .menu-logo img {
+  display: block;
+  width: 6rem;
+  height: auto;
+  filter: invert(85%);
+  z-index: 9;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+header .menu-icon {
+  position: absolute;
+  left: 1.8rem;
+  top: 2.4rem;
+  z-index: 10;
+}
+
+header .material-icons-round.md-dark {
+  color: rgb(0, 0, 0);
+}
+
+header .menu {
+  display: inline-block;
+  position: relative;
+}
+
+header .menu-links {
+  display: none;
+  position: absolute;
+  z-index: 21;
+  min-width: 20rem;
+  max-width: 100%;
+}
+
+header .menu-links a {
+  display: block;
+  text-decoration: none;
+  font-family: 'Alumni Sans', sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  padding-left: 1rem;
+  line-height: 2;
+  background-color: hsla(0, 0%, 0%, 0.85);
+  color:hsla(0, 0%, 100%, 0.75);
+}
+
+header .menu-links a:hover {
+  background-color: hsla(0, 0%, 15%, 0.85);
+  color: hsla(0, 0%, 100%, 0.95);
+}
+  
+header .menu:hover .menu-logo {
+  filter: invert(85%);
+}
+
+header .menu:hover .menu-links {
+  display: block;
+  transform: translateY(4rem);
+}
+
+header h1 {
+  display: inline-block;
+  color: whitesmoke;
+  font-family: 'Birthstone Bounce', cursive;
+  font-weight: 400;
+  font-size: 2rem;
+  text-align: right;
+  margin: auto;
+  width: 100%;
+  opacity: 0.8;
+  background-blend-mode: color-burn;
+}
+
+h1 a {
+  text-decoration: none;
+  color: whitesmoke;
+  cursor: pointer;
+}
