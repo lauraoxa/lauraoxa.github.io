@@ -5,12 +5,16 @@
 
 header {
   display: flex;
+  flex-shrink: 0;
   justify-content: space-between;
   vertical-align: middle;
+  margin-bottom: 0.5rem;
   padding: 0.5rem;
   z-index: 1000;
   width: 100%;
   height: 5rem;
+  min-width: 250px;
+  background-color: black;;
 }
 
 header > button {
@@ -28,7 +32,6 @@ header .menu-logo {
 header .menu-logo img {
   display: block;
   width: 6rem;
-  height: auto;
   filter: invert(85%);
   z-index: 9;
   position: absolute;
@@ -44,7 +47,7 @@ header .menu-icon {
 }
 
 header .material-icons-round.md-dark {
-  color: rgb(0, 0, 0);
+  color: rgb(0, 0, 0) !important;
 }
 
 header .menu {
@@ -66,15 +69,17 @@ header .menu-links a {
   font-family: 'Alumni Sans', sans-serif;
   font-weight: 700;
   font-size: 1.25rem;
+  text-align: left;
   padding-left: 1rem;
   line-height: 2;
-  background-color: hsla(0, 0%, 0%, 0.85);
-  color:hsla(0, 0%, 100%, 0.75);
+  background-color: hsla(0, 0%, 0%, 0.85) !important;
+  color:hsla(0, 0%, 100%, 0.75) !important;
 }
 
 header .menu-links a:hover {
-  background-color: hsla(0, 0%, 15%, 0.85);
-  color: hsla(0, 0%, 100%, 0.95);
+  background-color: hsla(0, 0%, 15%, 0.85) !important;
+  color: hsla(0, 0%, 100%, 0.95) !important;
+  box-shadow: none;
 }
   
 header .menu:hover .menu-logo {
@@ -86,9 +91,13 @@ header .menu:hover .menu-links {
   transform: translateY(4rem);
 }
 
-header h1 {
+header .home-icon {
+  vertical-align: middle;
+}
+
+header > h1 {
   display: inline-block;
-  color: whitesmoke;
+  color: whitesmoke !important;
   font-family: 'Birthstone Bounce', cursive;
   font-weight: 400;
   font-size: 2rem;
@@ -96,11 +105,10 @@ header h1 {
   width: 100%;
   margin: auto;
   opacity: 0.8;
-  background-blend-mode: color-burn;
 }
 
-h1 a {
+h1 a, h1 a:hover {
   text-decoration: none;
-  color: whitesmoke;
+  color: whitesmoke !important;
   cursor: pointer;
 }
