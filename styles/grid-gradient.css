@@ -12,7 +12,7 @@ body {
   font-weight: 400;
   font-style: normal;
   background-color: black;
-  color: white;
+  color: hsla(0, 0%, 100%, 0.8);
 }
 
 /* header {
@@ -135,7 +135,7 @@ footer {
   width: 100%;
   font-family: 'Caveat', cursive;
   font-weight: 400;
-  background-color: hsla(0, 0%, 0%, 0.5);
+  background-color: hsla(0, 0%, 0%, 0.75);
 }
 
 .kudos-wrap {
@@ -149,6 +149,7 @@ footer {
   font-family: 'Caveat', cursive;
   font-weight: 600;
   font-size: 1.2rem;
+  opacity: 0.8;
 }
 
 .kudos-list li {
@@ -156,23 +157,24 @@ footer {
   font-size: 1rem;
   padding: 0.2rem;
   margin: 0.25rem;
-  background-color: hsla(0, 0%, 96%, 0.2);
+  background-color: hsla(320, 100%, 80%, 0.5);
   background-clip: padding-box;
   border-radius: 5px;
 }
 
 footer a {
-  color: red;
+  color: hsl(280,100%,13%);
   text-decoration: none;
 }
 
 footer a:visited {
-  color: pink;
+  color: hsl(280,100%,5%);
 }
 
 footer a:hover {
-  color: seashell;
-  border-bottom: 1px dotted seashell;
+  color: hsla(280,100%,30%,0.5);
+  border-bottom: 1px dashed hsla(0, 0%, 100%,0.75);
+  text-shadow: 0.5px 0.5px black;
 }
 
 /* ----- **KUDOS** MEDIA Q ----- */
