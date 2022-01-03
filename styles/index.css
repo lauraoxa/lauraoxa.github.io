@@ -42,8 +42,6 @@ a:hover, a:active {
   width: 100%;
   height: 100vh;
   min-width: 250px;
-  border: 1px solid red;
-
 }
 
 .content-wrap::before {
