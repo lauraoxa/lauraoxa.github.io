@@ -11,8 +11,8 @@ body {
   font-family: 'Bellota', cursive;
   font-weight: 400;
   font-style: normal;
-  background-color: black;
   color: hsla(0, 0%, 100%, 0.8);
+  background-color: black;
 }
 
 /* header {
@@ -29,7 +29,17 @@ body {
   width: 100vw;
   max-width: 900px;
   margin: auto;
-  padding: 0.5rem;
+}
+
+.content-wrap::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -10;
   background:
   linear-gradient(0deg, hsla(0,100%,50%,0.4), hsla(0,100%,50%,0) 70%),
   linear-gradient(50deg, hsla(30,100%,50%,0.4), hsla(30,100%,50%,0) 70%),
@@ -38,7 +48,6 @@ body {
   linear-gradient(200deg, hsla(240,100%,50%,0.4), hsla(240,100%,50%,0) 70%),
   linear-gradient(250deg, hsla(280,100%,50%,0.4), hsla(280,100%,50%,0) 70%),
   linear-gradient(300deg, hsla(320,100%,50%,0.4), hsla(320,100%,50%,0) 70%);
-
 }
 
 .grid-wrap {
@@ -54,6 +63,8 @@ body {
     ". g4 g4"
     "g5 g5 g5";
   grid-gap: 1rem 1rem;
+  margin: auto;
+  padding: 1rem;
 }
 
 .grid-wrap div {
@@ -76,12 +87,20 @@ body {
   padding: 0.1rem;
   font-weight: normal;
   text-align: center;
-  font-size: 1.25rem;;
+  font-size: 1.25rem;
 }
 
 .g1 b {
   text-transform: uppercase;
   font-weight: 700;
+}
+
+.g2, .g4, .g5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0.5rem;
+  text-align: center;
 }
 
 .g2 {
@@ -90,7 +109,6 @@ body {
     repeating-linear-gradient(to bottom right,
     hsla(280,100%,50%,0.5),
     hsla(120,100%,50%,0.5));
-  padding: 0.5rem;
 }
 
 .g3 {
@@ -112,7 +130,6 @@ body {
     repeating-linear-gradient(to bottom right,
   hsla(320,100%,50%,0.5),
   hsla(240,100%,50%,0.5)); 
-  padding: 0.5rem;
 }
 
 .g5 {
@@ -121,7 +138,6 @@ body {
     repeating-linear-gradient(to bottom right,
   hsla(30,100%,50%,0.5),
   hsla(120,100%,50%,0.5));
-  padding: 0.5rem;
 }
 
 .grid-wrap p {
@@ -157,13 +173,13 @@ footer {
   font-size: 1rem;
   padding: 0.2rem;
   margin: 0.25rem;
-  background-color: hsla(320, 100%, 80%, 0.5);
+  background-color: hsla(320, 100%, 80%, 0.65);
   background-clip: padding-box;
   border-radius: 5px;
 }
 
 footer a {
-  color: hsl(280,100%,13%);
+  color: hsl(280,100%,0%);
   text-decoration: none;
 }
 
@@ -172,7 +188,6 @@ footer a:visited {
 }
 
 footer a:hover {
-  color: hsla(280,100%,30%,0.5);
   border-bottom: 1px dashed hsla(0, 0%, 100%,0.75);
   text-shadow: 0.5px 0.5px black;
 }
